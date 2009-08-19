@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		BC204A3F09C0DD2C0076A6CC /* WOHotKey.palette installed */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC204A4609C0DD410076A6CC /* Build configuration list for PBXAggregateTarget "WOHotKey.palette installed" */;
+			buildPhases = (
+				BC204AD909C117F90076A6CC /* ShellScript */,
+			);
+			buildSettings = {
+				PRODUCT_NAME = "WOHotKey installed";
+			};
+			dependencies = (
+				BC204AD809C117F20076A6CC /* PBXTargetDependency */,
+			);
+			name = "WOHotKey.palette installed";
+			productName = "WOHotKey installed";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		13EB9DBE07DE0F1E00EB933A /* InterfaceBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EB9DBD07DE0F1E00EB933A /* InterfaceBuilder.framework */; };
+		54D33B2906778E3300C9C163 /* WOHotKey.ibclassdescription in Resources */ = {isa = PBXBuildFile; fileRef = 54D33B2806778E3300C9C163 /* WOHotKey.ibclassdescription */; };
+		8D1AC9670486D14A00FE50C9 /* WOHotKeyInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0259C57EFE90428111CA0C5A /* WOHotKeyInspector.nib */; };
+		8D1AC9680486D14A00FE50C9 /* WOHotKeyPalette.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0259C580FE90428111CA0C5A /* WOHotKeyPalette.nib */; };
+		8D1AC9690486D14A00FE50C9 /* palette.table in Resources */ = {isa = PBXBuildFile; fileRef = 0259C583FE90428111CA0C5A /* palette.table */; };
+		8D1AC96C0486D14A00FE50C9 /* WOHotKeyInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C577FE90428111CA0C5A /* WOHotKeyInspector.m */; settings = {ATTRIBUTES = (); }; };
+		8D1AC96D0486D14A00FE50C9 /* WOHotKeyPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C578FE90428111CA0C5A /* WOHotKeyPalette.m */; settings = {ATTRIBUTES = (); }; };
+		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */; };
+		BC204A1309C0CEB10076A6CC /* WOHotKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2049D309C0C77A0076A6CC /* WOHotKey.framework */; };
+		BC204A3509C0CF750076A6CC /* WODebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC204A3009C0CF700076A6CC /* WODebug.framework */; };
+		BC34B65A0818F672004DB8F7 /* KeyCaps.tiff in Resources */ = {isa = PBXBuildFile; fileRef = BC34B6590818F672004DB8F7 /* KeyCaps.tiff */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2E58F360FFB2326E11CA0CBA /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		2E58F361FFB2326E11CA0CBA /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		BC2049D209C0C77A0076A6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC20497E09C0C7780076A6CC /* WOHotKey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216 /* WOHotKey.framework */;
+			remoteInfo = WOHotKey;
+		};
+		BC204A2F09C0CF700076A6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC204A2309C0CF700076A6CC /* WODebug.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216 /* WODebug.framework */;
+			remoteInfo = WODebug;
+		};
+		BC204A3109C0CF700076A6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC204A2309C0CF700076A6CC /* WODebug.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9A15CE076290B300A69892 /* Wincent Crash Reporter.app */;
+			remoteInfo = WOCrashReporter;
+		};
+		BC204A3309C0CF700076A6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC204A2309C0CF700076A6CC /* WODebug.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCFA2FFA098BD9CA00EEEE22 /* WODebugTests.bundle */;
+			remoteInfo = WODebugTests;
+		};
+		BC204AC809C0E7300076A6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC20497E09C0C7780076A6CC /* WOHotKey.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC204A5409C0E1F30076A6CC /* WOHotKey.framework installed */;
+			remoteInfo = "WOHotKey.framework installed";
+		};
+		BC204ACA09C0E7300076A6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC204A2309C0CF700076A6CC /* WODebug.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC204AAD09C0E63D0076A6CC /* WODebug installed */;
+			remoteInfo = "WODebug installed";
+		};
+		BC204AD709C117F20076A6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0259C573FE90428111CA0C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1AC9600486D14A00FE50C9 /* WOHotKey.palette */;
+			remoteInfo = WOHotKey.palette;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0259C577FE90428111CA0C5A /* WOHotKeyInspector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WOHotKeyInspector.m; sourceTree = "<group>"; };
+		0259C578FE90428111CA0C5A /* WOHotKeyPalette.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WOHotKeyPalette.m; sourceTree = "<group>"; };
+		0259C57BFE90428111CA0C5A /* WOHotKeyInspector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WOHotKeyInspector.h; sourceTree = "<group>"; };
+		0259C57CFE90428111CA0C5A /* WOHotKeyPalette.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WOHotKeyPalette.h; sourceTree = "<group>"; };
+		0259C57FFE90428111CA0C5A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/WOHotKeyInspector.nib; sourceTree = "<group>"; };
+		0259C581FE90428111CA0C5A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/WOHotKeyPalette.nib; sourceTree = "<group>"; };
+		0259C583FE90428111CA0C5A /* palette.table */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = palette.table; sourceTree = "<group>"; };
+		13EB9DBD07DE0F1E00EB933A /* InterfaceBuilder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilder.framework; path = /System/Library/Frameworks/InterfaceBuilder.framework; sourceTree = "<absolute>"; };
+		13F8B88807B434F6008AE28D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		13F8B88907B434F6008AE28D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		13F8B88A07B434F6008AE28D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF980370C29C00C91783 /* WOHotKey_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOHotKey_Prefix.pch; sourceTree = "<group>"; };
+		54D33B2806778E3300C9C163 /* WOHotKey.ibclassdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WOHotKey.ibclassdescription; sourceTree = "<group>"; };
+		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1AC9740486D14A00FE50C9 /* WOHotKey.palette */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WOHotKey.palette; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC20497E09C0C7780076A6CC /* WOHotKey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WOHotKey.xcodeproj; path = ../WOHotKey.xcodeproj; sourceTree = SOURCE_ROOT; };
+		BC2049E809C0C7FB0076A6CC /* interface-builder-palette.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "interface-builder-palette.xcconfig"; path = "../../../buildtools/interface-builder-palette.xcconfig"; sourceTree = SOURCE_ROOT; };
+		BC2049E909C0C7FB0076A6CC /* release-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "release-style.xcconfig"; path = "../../../buildtools/release-style.xcconfig"; sourceTree = SOURCE_ROOT; };
+		BC2049EA09C0C7FB0076A6CC /* base-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "base-style.xcconfig"; path = "../../../buildtools/base-style.xcconfig"; sourceTree = SOURCE_ROOT; };
+		BC2049EB09C0C7FB0076A6CC /* loadable-bundle-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "loadable-bundle-target.xcconfig"; path = "../../../buildtools/loadable-bundle-target.xcconfig"; sourceTree = SOURCE_ROOT; };
+		BC2049EC09C0C7FB0076A6CC /* debug-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "debug-style.xcconfig"; path = "../../../buildtools/debug-style.xcconfig"; sourceTree = SOURCE_ROOT; };
+		BC204A2309C0CF700076A6CC /* WODebug.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WODebug.xcodeproj; path = ../../../WODebug/trunk/WODebug.xcodeproj; sourceTree = SOURCE_ROOT; };
+		BC34B6590818F672004DB8F7 /* KeyCaps.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = KeyCaps.tiff; sourceTree = "<group>"; };
+		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D1AC96E0486D14A00FE50C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC204A3509C0CF750076A6CC /* WODebug.framework in Frameworks */,
+				BC204A1309C0CEB10076A6CC /* WOHotKey.framework in Frameworks */,
+				8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */,
+				13EB9DBE07DE0F1E00EB933A /* InterfaceBuilder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0259C574FE90428111CA0C5A /* WOHotKey */ = {
+			isa = PBXGroup;
+			children = (
+				BC2049D709C0C7BD0076A6CC /* Configuration */,
+				BC34B64B0818F5FC004DB8F7 /* Dependencies */,
+				32DBCF9E0370C38000C91783 /* Palette */,
+				1ED78706FE9D4A0611CA0C5A /* Products */,
+				2E58F364FFB232C311CA0CBA /* Frameworks */,
+			);
+			name = WOHotKey;
+			sourceTree = "<group>";
+		};
+		131E8FE8067F80F40006E0CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1AC9730486D14A00FE50C9 /* Info.plist */,
+				8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */,
+				BC34B6590818F672004DB8F7 /* KeyCaps.tiff */,
+				0259C57EFE90428111CA0C5A /* WOHotKeyInspector.nib */,
+				0259C580FE90428111CA0C5A /* WOHotKeyPalette.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		13F8B6FD07B43410008AE28D /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13EB9DBD07DE0F1E00EB933A /* InterfaceBuilder.framework */,
+				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		13F8B70407B43425008AE28D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13F8B88807B434F6008AE28D /* AppKit.framework */,
+				13F8B88907B434F6008AE28D /* CoreData.framework */,
+				13F8B88A07B434F6008AE28D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1ED78706FE9D4A0611CA0C5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1AC9740486D14A00FE50C9 /* WOHotKey.palette */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E58F364FFB232C311CA0CBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13F8B6FD07B43410008AE28D /* Linked Frameworks */,
+				13F8B70407B43425008AE28D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32DBCF9E0370C38000C91783 /* Palette */ = {
+			isa = PBXGroup;
+			children = (
+				54D33B2406778DD400C9C163 /* Undo Support */,
+				54D33B2506778DF000C9C163 /* Classes */,
+				32DBCF9F0370C38200C91783 /* Other Sources */,
+				131E8FE8067F80F40006E0CE /* Resources */,
+				0259C583FE90428111CA0C5A /* palette.table */,
+			);
+			name = Palette;
+			sourceTree = "<group>";
+		};
+		32DBCF9F0370C38200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF980370C29C00C91783 /* WOHotKey_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		54D33B2406778DD400C9C163 /* Undo Support */ = {
+			isa = PBXGroup;
+			children = (
+				54D33B2806778E3300C9C163 /* WOHotKey.ibclassdescription */,
+			);
+			name = "Undo Support";
+			sourceTree = "<group>";
+		};
+		54D33B2506778DF000C9C163 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0259C57BFE90428111CA0C5A /* WOHotKeyInspector.h */,
+				0259C577FE90428111CA0C5A /* WOHotKeyInspector.m */,
+				0259C57CFE90428111CA0C5A /* WOHotKeyPalette.h */,
+				0259C578FE90428111CA0C5A /* WOHotKeyPalette.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BC20497F09C0C7780076A6CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC2049D309C0C77A0076A6CC /* WOHotKey.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC2049D709C0C7BD0076A6CC /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				BC2049E809C0C7FB0076A6CC /* interface-builder-palette.xcconfig */,
+				BC2049E909C0C7FB0076A6CC /* release-style.xcconfig */,
+				BC2049EA09C0C7FB0076A6CC /* base-style.xcconfig */,
+				BC2049EB09C0C7FB0076A6CC /* loadable-bundle-target.xcconfig */,
+				BC2049EC09C0C7FB0076A6CC /* debug-style.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		BC204A2409C0CF700076A6CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC204A3009C0CF700076A6CC /* WODebug.framework */,
+				BC204A3209C0CF700076A6CC /* Wincent Crash Reporter.app */,
+				BC204A3409C0CF700076A6CC /* WODebugTests.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC34B64B0818F5FC004DB8F7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BC204A2309C0CF700076A6CC /* WODebug.xcodeproj */,
+				BC20497E09C0C7780076A6CC /* WOHotKey.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1AC9600486D14A00FE50C9 /* WOHotKey.palette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC021CD30899AC40009F0362 /* Build configuration list for PBXNativeTarget "WOHotKey.palette" */;
+			buildPhases = (
+				8D1AC9660486D14A00FE50C9 /* Resources */,
+				8D1AC96A0486D14A00FE50C9 /* Sources */,
+				8D1AC96E0486D14A00FE50C9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WOHotKey_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Palettes";
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_LDFLAGS = "-bundle";
+				PREBINDING = NO;
+				PRODUCT_NAME = WOHotKey;
+				WRAPPER_EXTENSION = palette;
+			};
+			dependencies = (
+				BC204AC909C0E7300076A6CC /* PBXTargetDependency */,
+				BC204ACB09C0E7300076A6CC /* PBXTargetDependency */,
+			);
+			name = WOHotKey.palette;
+			productInstallPath = "$(HOME)/Developer/Palettes";
+			productName = WOHotKey;
+			productReference = 8D1AC9740486D14A00FE50C9 /* WOHotKey.palette */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0259C573FE90428111CA0C5A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = BC021CD70899AC40009F0362 /* Build configuration list for PBXProject "WOHotKeyPalette" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				2E58F360FFB2326E11CA0CBA /* Development */,
+				2E58F361FFB2326E11CA0CBA /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 0259C574FE90428111CA0C5A /* WOHotKey */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BC204A2409C0CF700076A6CC /* Products */;
+					ProjectRef = BC204A2309C0CF700076A6CC /* WODebug.xcodeproj */;
+				},
+				{
+					ProductGroup = BC20497F09C0C7780076A6CC /* Products */;
+					ProjectRef = BC20497E09C0C7780076A6CC /* WOHotKey.xcodeproj */;
+				},
+			);
+			targets = (
+				8D1AC9600486D14A00FE50C9 /* WOHotKey.palette */,
+				BC204A3F09C0DD2C0076A6CC /* WOHotKey.palette installed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BC2049D309C0C77A0076A6CC /* WOHotKey.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WOHotKey.framework;
+			remoteRef = BC2049D209C0C77A0076A6CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC204A3009C0CF700076A6CC /* WODebug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WODebug.framework;
+			remoteRef = BC204A2F09C0CF700076A6CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC204A3209C0CF700076A6CC /* Wincent Crash Reporter.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Wincent Crash Reporter.app";
+			remoteRef = BC204A3109C0CF700076A6CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC204A3409C0CF700076A6CC /* WODebugTests.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WODebugTests.bundle;
+			remoteRef = BC204A3309C0CF700076A6CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1AC9660486D14A00FE50C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC9670486D14A00FE50C9 /* WOHotKeyInspector.nib in Resources */,
+				8D1AC9680486D14A00FE50C9 /* WOHotKeyPalette.nib in Resources */,
+				8D1AC9690486D14A00FE50C9 /* palette.table in Resources */,
+				8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */,
+				54D33B2906778E3300C9C163 /* WOHotKey.ibclassdescription in Resources */,
+				BC34B65A0818F672004DB8F7 /* KeyCaps.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC204AD909C117F90076A6CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${BUILDTOOLS_DIR}/InstallIBPalette.sh\" \"WOHotKey\" \"WODebug\" \"WOHotKey\"\n\nexit 0\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D1AC96A0486D14A00FE50C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC96C0486D14A00FE50C9 /* WOHotKeyInspector.m in Sources */,
+				8D1AC96D0486D14A00FE50C9 /* WOHotKeyPalette.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC204AC909C0E7300076A6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WOHotKey.framework installed";
+			targetProxy = BC204AC809C0E7300076A6CC /* PBXContainerItemProxy */;
+		};
+		BC204ACB09C0E7300076A6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WODebug installed";
+			targetProxy = BC204ACA09C0E7300076A6CC /* PBXContainerItemProxy */;
+		};
+		BC204AD809C117F20076A6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1AC9600486D14A00FE50C9 /* WOHotKey.palette */;
+			targetProxy = BC204AD709C117F20076A6CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0259C57EFE90428111CA0C5A /* WOHotKeyInspector.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0259C57FFE90428111CA0C5A /* English */,
+			);
+			name = WOHotKeyInspector.nib;
+			sourceTree = "<group>";
+		};
+		0259C580FE90428111CA0C5A /* WOHotKeyPalette.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0259C581FE90428111CA0C5A /* English */,
+			);
+			name = WOHotKeyPalette.nib;
+			sourceTree = "<group>";
+		};
+		8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D1AC97B0486D23100FE50C9 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC021CD40899AC40009F0362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2049E809C0C7FB0076A6CC /* interface-builder-palette.xcconfig */;
+			buildSettings = {
+				GCC_PREFIX_HEADER = WOHotKey_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = WOHotKey;
+			};
+			name = Debug;
+		};
+		BC021CD50899AC40009F0362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2049E809C0C7FB0076A6CC /* interface-builder-palette.xcconfig */;
+			buildSettings = {
+				GCC_PREFIX_HEADER = WOHotKey_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = WOHotKey;
+			};
+			name = Release;
+		};
+		BC021CD80899AC40009F0362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2049EC09C0C7FB0076A6CC /* debug-style.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BC021CD90899AC40009F0362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2049E909C0C7FB0076A6CC /* release-style.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		BC204A4709C0DD410076A6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "WOHotKey installed";
+			};
+			name = Debug;
+		};
+		BC204A4809C0DD410076A6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = "WOHotKey installed";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC021CD30899AC40009F0362 /* Build configuration list for PBXNativeTarget "WOHotKey.palette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC021CD40899AC40009F0362 /* Debug */,
+				BC021CD50899AC40009F0362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC021CD70899AC40009F0362 /* Build configuration list for PBXProject "WOHotKeyPalette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC021CD80899AC40009F0362 /* Debug */,
+				BC021CD90899AC40009F0362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC204A4609C0DD410076A6CC /* Build configuration list for PBXAggregateTarget "WOHotKey.palette installed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC204A4709C0DD410076A6CC /* Debug */,
+				BC204A4809C0DD410076A6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0259C573FE90428111CA0C5A /* Project object */;
+}

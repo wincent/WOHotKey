@@ -1,0 +1,5 @@
+The WOHotKeyValueTransformer class is currently unused. The Cocoa Bindings code might be a bit more elegant if I started using it.
+
+In other words, instead of having setValue/value (which uses an NSArray of NSDictionary objects) and a separate setHotKeys/hotKeys set of methods (which uses an NSArray of WOHotKey objects), I could simply always pass WOHotKey arrays, and use the transformer to convert as I move back and forth with NSUserDefaultsController.
+
+The current system works and don't want to break it, but it's worth thinking about.

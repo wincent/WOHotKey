@@ -1,0 +1,7 @@
+{
+	WOHotKey = {
+		SuperClass = NSView;
+		Attributes = {
+		};
+	};
+}

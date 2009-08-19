@@ -1,0 +1,31 @@
+About WOHotKey
+
+WOHotKey is a framework that provides hot key functionality. There are three important files in the framework for localization purposes: "Keys.strings", "Localizable.strings" and "InfoPlist.strings".
+
+
+(1) "Keys.strings"
+
+This file contains strings that are displayed in the preferences user interface when setting or displaying hot key combinations.
+
+For example, when the user presses the space bar the word "Space" is displayed in the English user interface.
+
+Most of the common modifier keys do not appear in the Keys.strings file because a symbolic (non-textual) representation already exists for them. This means that symbols are used to represent keys like "Escape", "Up cursor", "Down cursor", "Left cursor", "Right cursor", "Page up", "Page down", "Home", "End", "Delete", "Backspace", "Shift", "Command", "Alt", "Control", "Tab", "Return", "Enter", and so forth.
+
+There are many keys, however, for which there is no symbolic representation. Most of these keys are rare and do not appear on the majority of Macintosh keyboards; for example, "Insert Line", "Mode Switch" and many others.
+
+It is not necessary to localize these uncommon keys and the truth is that in many cases the country-specific keyboards which have these keys will use the English label anyway. You should only localize the keys which are likely to appear on most Macintosh users' keyboards. The strings which you should most definitely localize are "Space", "fn"/"fn-" (the "Function" modifier key that appears on most PowerBooks and iBooks; in most cases I suspect that it will be labelled as "fn" even on non-English keyboads), and "Pad-" (the modifier string used to indicate that a key belongs to the numeric keypad; in this way the software can differentiate between "9" and "Pad-9", for example).
+
+WOHotKey supports all of these common keys as well as the very rare keys because Cocoa supports them. For more information on the possible keys that Cocoa supports, see this document:
+
+http://developer.apple.com/documentation/Cocoa/Reference/ApplicationKit/ObjC_classic/Classes/NSEvent.html
+
+
+(2) "Localizable.strings"
+
+This file contains the text that is used in the tool-tips that are shown when the user hovers the mouse of the hot key field editor when setting hot keys.
+
+
+(3) "InfoPlist.strings"
+
+You should localize this file, substituting the appropriate words for "Copyright" and "version". You should not translate the name of the framework nor the name of the copyright holder.
+

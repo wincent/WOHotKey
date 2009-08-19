@@ -1,0 +1,15 @@
+When adding WOHotKeyCaptureTextField to a window, make sure the window's initialFirstResponder is set to some other control in the window (doesn't have to be a text-based control) so that typing when the window first appears onscreen won't inadvertently set a hot key.
+
+This also enables the "tick" button to correctly resign first responder.
+
+Possibly interesting definitions in system headers/documentation:
+
+- typeEventHotKeyID (10.0+)
+- CopySymbolicHotKeys (10.3+)
+- kHISymbolicHotKeyCode (10.3+)
+- kHISymbolicHotKeyModifiers (10.3+)
+- kHISymbolicHotKeyEnabled (10.3+)
+- kHIHotKeyModeAllEnabled (10.4+)
+- kHIHotKeyModeAllDisabled (10.4+)
+- kHIHotKeyModeAllDisabledExceptUniversalAccess (10.4+)
+- eventHotKeyExistsErr
